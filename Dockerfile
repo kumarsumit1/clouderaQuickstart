@@ -15,8 +15,8 @@ apt-get -qq -y install apt-utils  ntp iputils-ping wget curl unzip sudo tar vim-
 
 #Specifically to cloudera
 RUN apt-get -y install apt-transport-https 
-RUN apt-get -y install grub 
-RUN apt-get -y install selinux
+#RUN apt-get -y install grub 
+#RUN apt-get -y install selinuxs
 
 
 #RUN apt-get -qq -y install libmysql-java libpostgresql-jdbc-java
