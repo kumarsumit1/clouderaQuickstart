@@ -11,20 +11,7 @@ ENV HOSTNAME quickstart.cloudera
 # Download and install packages
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
-apt-get -qq -y install apt-utils && \
-apt-get -qq -y install wget && \
-apt-get -qq -y install vim-tiny && \
-apt-get -qq -y install ssh && \
-apt-get -qq -y install openssh-client && \
-apt-get -qq -y install curl && \
-apt-get -qq -y install unzip && \
-apt-get -qq -y install tar && \
-apt-get -qq -y install openssl && \
-apt-get -qq -y install sudo && \
-apt-get -qq -y install ntp && \
-apt-get install -qq -y iputils-ping && \
-apt-get install -qq -y libmysql-java && \
-apt-get install -qq -y libpostgresql-jdbc-java
+apt-get -qq -y install apt-utils ntp iputils-ping libmysql-java libpostgresql-jdbc-java wget curl unzip sudo tar vim-tiny openssl ssh openssh-client
 
 
 # MySQL
