@@ -41,7 +41,7 @@ service ssh start
 
 
 RUN mkdir -p /opt/cm
-RUN wget -q https://archive.cloudera.com/cm6/6.1.0/cloudera-manager-installer.bin -O /opt/cm/cloudera-manager-installer.bin
+RUN wget https://archive.cloudera.com/cm6/6.0.1/cloudera-manager-installer.bin -O /opt/cm/cloudera-manager-installer.bin
 RUN chmod 777 /opt/cm/cloudera-manager-installer.bin
 
 
@@ -61,7 +61,7 @@ WORKDIR /tmp
 
 # External resources exposure
 VOLUME /var/log
-EXPOSE 8080
+EXPOSE 7180
 
 ENTRYPOINT ["/bin/sh"] 
 #CMD ["ambari-server start"]
