@@ -14,7 +14,7 @@ RUN apt-get update && \
 apt-get -qq -y install apt-utils  ntp iputils-ping wget curl unzip sudo tar vim-tiny openssl ssh openssh-client
 
 #Specifically to cloudera
-#RUN apt-get -qq -y install apt-transport-https grub selinux
+RUN apt-get -qq -y install apt-transport-https grub selinux
 
 
 #RUN apt-get -qq -y install libmysql-java libpostgresql-jdbc-java
